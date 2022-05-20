@@ -19,6 +19,6 @@ const onGeoOk = (position) => {
 };
 
 const onGeoError = () => {
-  alert("위치 조회에 실패했슷ㅂ니다. 날씨 정보를 불러올 수 없습니다.");
+  alert("위치 조회에 실패했습니다. 날씨 정보를 불러올 수 없습니다.");
 };
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
