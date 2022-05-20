@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#username {
+  align-self: center;
+  margin-top: 1%;
+}
+input {
+  border: none;
+  background: none;
+  text-align: center;
+  font-size: 2vw;
+}
+#todoInput {
+  align-self: center;
+}
+
+#todoInput > input {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.4);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 90%;
+  height: 90vh;
+  border-radius: 30px;
+}
+
+.loginY {
+  margin-top: 1%;
+  font-size: 2vw;
+  color: rgba(0, 0, 0, 0.6);
+  align-self: center;
+}
+#weather {
+  align-self: center;
+}
+
+.todolist {
+  align-self: center;
+  margin-top: 2%;
+  background-color: none;
+  width: 30vw;
+  height: 45vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: scroll;
+}
+
+.clock {
+  font-size: 10vw;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+li > span {
+  margin-right: 10px;
+  font-size: 3vw;
+  font-weight: bold;
+  overflow: scroll;
+}
+
+li > button {
+  border: none;
+  background: black;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  color: rgba(255, 0, 0, 0.9);
+  font-size: 1vmin;
+  font-weight: bold;
+}
+#weather {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+#weather > div {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  font-size: 1.2vmin;
+  width: 60px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#weather > div:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+::-webkit-scrollbar-thumb {
+  /* 스크롤 */
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  /*가로세로 스크롤이 만나는공간 옵션*/
+  background-color: none;
+}
