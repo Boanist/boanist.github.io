@@ -12,7 +12,7 @@ const onGeoOk = (position) => {
 
       city.innerText = data.name;
       weather.innerText = data.weather[0].main;
-      temp.innerText = data.main.temp;
+      temp.innerText = `${data.main.temp}℃`;
     })
   );
   console.log(lat, lng);
